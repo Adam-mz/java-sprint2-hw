@@ -13,7 +13,7 @@ public class MonthlyReport {
 
     }
 
-    int getMaxIncomeIndex() {
+    public int getMaxIncomeIndex() {
         int maxIncome = incomeTr.get(0).quantity * incomeTr.get(0).unit_price;
         int maxIndex = 0;
         for (int i = 1; i < incomeTr.size(); i++) {
@@ -39,7 +39,7 @@ public class MonthlyReport {
 
     }
 
-    int getMaxExpensesIndex() {
+    public int getMaxExpensesIndex() {
         int maxExpenses = expensesTr.get(0).quantity * expensesTr.get(0).unit_price;
         int maxIndex = 0;
         for (int i = 1; i < expensesTr.size(); i++) {
